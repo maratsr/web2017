@@ -7,22 +7,22 @@ drop sequence if exists ids_generator;
 create sequence ids_generator start 1000000; -- генерируем инкрементные ключи
 create table adm_roles (
   id bigint primary key default nextval('ids_generator'),
-  rolename varchar(64) not null,  -- наименование роли
+  name varchar(64) not null,  -- наименование роли
   description varchar(255) null,  -- описание роли
   comment varchar(255) null -- комментарии
 );
 
 -- Собственно роли в порядке возрастания полномочий
-insert into adm_roles (rolename, description)
+insert into adm_roles (name, description)
 values ('ROLE_ADMIN', 'Admin role - user/roles operation are available');
 
-insert into adm_roles (rolename, description)
+insert into adm_roles (name, description)
 values ('ROLE_POWER', 'Power role - all (except non user/roles) operations are available');
 
-insert into adm_roles (rolename, description)
+insert into adm_roles (name, description)
 values ('ROLE_USER', 'General standard user');
 
-insert into adm_roles (rolename, description)
+insert into adm_roles (name, description)
 values ('ROLE_ANONYMOUS', 'Anonymous or guest access');
 
 -- Таблица пользователей

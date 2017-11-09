@@ -1,0 +1,8 @@
+.idea
+out
+target
+*.patch
+*.iml
+log
+.idea/
+web2017.iml
