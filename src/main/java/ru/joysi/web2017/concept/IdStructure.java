@@ -1,4 +1,4 @@
-package concepts;
+package ru.joysi.web2017.concept;
 
 public interface IdStructure {
     Long getId();

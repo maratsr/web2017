@@ -1,6 +1,6 @@
-package model;
+package ru.joysi.web2017.model;
 
-import concepts.IdStructure;
+import ru.joysi.web2017.concept.IdStructure;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;

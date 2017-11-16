@@ -1,4 +1,4 @@
-package model;
+package ru.joysi.web2017.model;
 
 import org.springframework.security.core.GrantedAuthority;
 

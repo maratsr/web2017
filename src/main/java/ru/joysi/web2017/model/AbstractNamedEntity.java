@@ -1,6 +1,4 @@
-package model;
-
-import org.hibernate.validator.constraints.SafeHtml;
+package ru.joysi.web2017.model;
 
 
 import javax.persistence.Column;
