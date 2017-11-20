@@ -33,7 +33,7 @@
     <beans:bean class="ru.joysi.web2017.util.PasswordUtil" id="passwordEncoder" factory-method="getPasswordEncoder"/>
 
     <authentication-manager>
-        <authentication-provider user-service-ref="userService">
+        <authentication-provider user-service-ref="userServiceImpl">
             <password-encoder ref="passwordEncoder"/>
 
             <!--

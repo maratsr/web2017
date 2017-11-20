@@ -247,4 +247,9 @@ public class User extends AbstractNamedEntity{
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name.toLowerCase(Locale.ENGLISH));
+    }
 }
